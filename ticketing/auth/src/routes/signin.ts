@@ -39,7 +39,7 @@ router.post('/api/users/signin',
         }, process.env.JWT_KEY!)
         req.session = { jwt: userJwt }
 
-        res.status(201).send(existingUser)
+        res.status(200).send(existingUser)
     }
 )
 
